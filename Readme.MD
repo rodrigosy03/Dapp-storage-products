@@ -1,13 +1,16 @@
-- Instalacion necesaria:
-    Ganache (Mantener ejecutado)
-    node.js
+1. Instalaciones necesarias:
+    Node.js
+    Ganache
+    Visual Studio Code
 
-- Usar los siguientes comandos para programar smartcontracts en caso de no tener instalado Truffle:
-    npom truffle -g (Instala el entorno para el desarrollo en blockhain)
+2. Abrir proyecto en Visual Studio Code
 
-- Usar los siguientes comandos para el frontend:
-    npm install bootstrap lite-server web3 @metamask/detect-provider @truffle/contract
-    npm init --yes
+3. Ejecutar los siguientes comandos para instalar los paquetes necesarios
+    - npm truffle -g (Esto instala el entorno para el desarrollo en blockhain)
+    - npm install lite-server bootstrap web3 @metamask/detect-provider @truffle/contract slyther-analyzer
 
-- Usar el siguiente comando para ejecutar la DApp:
-    npm run dev
+4. Ejecutar los siguientes comandos para desplegar los smartcontracts en caso de no tener instalado Truffle:
+    - truffle deploy
+
+5. Finalmente usar el siguiente comando para ejecutar la DApp:
+    - npm run dev

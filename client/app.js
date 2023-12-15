@@ -7,7 +7,7 @@ App = {
         await App.loadAccount()
         await App.loadContracts()
         App.render()
-        await App.renderProducts()         
+        await App.renderProducts()       
     },
 
     loadEthereum: async () => {
@@ -53,19 +53,20 @@ App = {
     //De forma analogica, pinta datos
     render: () => {
         console.log(App.account);
-        document.getElementById("account").innerText= App.account;
+        document.getElementById("account").innerText = App.account;
     },
 
     renderProducts: async () => {
         const productsCounter = await App.productsContract.productsCounter();
-        const productsCounterNumer = productsCounter.toNumber();
+        const productsCounterNumber = productsCounter.toNumber();
 
         console.log(productsCounter);
-        console.log("Hay un total de: " + productsCounterNumer + " contratos.");
+        console.log("Hay un total de: " + productsCounterNumber + " contratos.");
 
         let html = "";
-
-        for (let i = 1; i <= productsCounterNumer; i++) {
+        
+        // for (let i = 1; i <= productsCounterNumber; i++) {
+        for (let i = productsCounterNumber; i >= 1; i--) {
             const product = await App.productsContract.products(i)
 
             const productID = product[0];
@@ -74,32 +75,53 @@ App = {
             const productPublished = product[3];
             const productCreatedAT = product[4];
 
-            let productElements = `
-                <div class="card bg-dark rounded-0 mb-2 text-light">
-                    <div class="card-heeader">
-                        <span>${productTittle}</span>
-                        <div class="form-check form-switch">
-                            <input 
-                                class="form-check-input" 
-                                type="checkbox" 
+            if (productTittle != "" || productDescription != "") {
+                let productElements = `
+                    <div class="card text-center mb-3">
+                        <div class="card-header navbar">
+                            <div class="container-fluid">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-start">
+                                    <li class="nav-item">
+                                        <h1 class="card-title pr-7">${productID}. ${productTittle}</h1>
+                                    </li>
+                                </ul>   
+                                
+                                <div class="d-flex form-check form-switch mx-3 align-items-end"> 
+                                    <input 
+                                        class="form-check-input" 
+                                        type="checkbox" 
+                                        data-id="${productID}"
+                                        ${productPublished && "checked"} 
+                                        onchange="App.togglePublished(this)"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <p class="card-text">${productDescription}</p>
+                        </div>
+
+                        
+
+                        <div class="card-footer text-muted">
+                            <p class="text-muted">${productPublished} /// Creado el ${new Date(productCreatedAT*1000).toLocaleString()}</p>
+                        </div>
+                        
+                        <!-- Botones -->
+                        <div class="py-2 bg-secondary"> 
+                            <button
+                                class="btn btn-danger mx-auto"
                                 data-id="${productID}"
-                                ${productPublished && "checked"} 
-                                onchange="App.togglePublished(this)"
-                            />
-                            - ${productPublished}
-                        </div>
-                        <span>${productDescription}</span>
-                    </div>
-                    <div class="card-body">
-                        <div>
-                            <span>ID: ${productID}</span>
-                            <p class="text-muted text-light">Creado: ${new Date(productCreatedAT*1000).toLocaleString()}</p>
+                                onclick="App.deleteProduct(this)"
+                            >
+                                Eliminar
+                            </button>
                         </div>
                     </div>
-                    
-                </div>
-            `
-            html += productElements;
+                `
+                html += productElements;
+            }
         }
 
         document.querySelector("#productsList").innerHTML = html;
@@ -110,6 +132,7 @@ App = {
             from: App.account
         });
 
+        window.location.reload();
         console.log(result.logs[0].args);
     },
 
@@ -124,5 +147,35 @@ App = {
         })
 
         window.location.reload();
+    },
+
+    deleteProduct: async (element) => {
+        try {
+            console.log(element);
+            console.log(element.dataset.id);
+            const productID = element.dataset.id;
+            
+            await App.productsContract.deleteProduct(productID, {
+                from: App.account
+            });
+            console.log(`Producto con ID ${productID} eliminado con éxito.`);
+        
+            window.location.reload();
+        } catch (error) {
+            console.error("Error al eliminar el producto:", error);
+        }        
+    },
+    
+    updateProduct: async (id, newTitle, newDescription) => {
+        try {            
+            await App.productsContract.updateProduct(id, newTitle, newDescription, {
+                from: App.account
+            });
+            console.log(`Producto con ID ${id} actualizado con éxito.`);
+        
+            window.location.reload();
+        } catch (error) {
+            console.error("Error al actualizar el producto:", error);
+        }        
     }
 }
