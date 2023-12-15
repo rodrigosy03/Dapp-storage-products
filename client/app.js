@@ -102,8 +102,6 @@ App = {
                             <p class="card-text">${productDescription}</p>
                         </div>
 
-                        
-
                         <div class="card-footer text-muted">
                             <p class="text-muted">${productPublished} /// Creado el ${new Date(productCreatedAT*1000).toLocaleString()}</p>
                         </div>

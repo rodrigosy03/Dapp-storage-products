@@ -1,71 +1,5 @@
 [
 	{
-		"elements": [
-			{
-				"type": "pragma",
-				"name": ">=0.4.22<0.9.0",
-				"source_mapping": {
-					"start": 33,
-					"length": 32,
-					"filename_relative": "contracts/Migrations.sol",
-					"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\Migrations.sol",
-					"filename_short": "Migrations.sol",
-					"is_dependency": false,
-					"lines": [
-						2
-					],
-					"starting_column": 1,
-					"ending_column": 33,
-					"_ext_source_hash": "084e44bcf7ef8997e5108d40577e281e"
-				},
-				"type_specific_fields": {
-					"directive": [
-						"solidity",
-						">=",
-						"0.4",
-						".22",
-						"<",
-						"0.9",
-						".0"
-					]
-				}
-			},
-			{
-				"type": "pragma",
-				"name": "^0.8.6",
-				"source_mapping": {
-					"start": 33,
-					"length": 23,
-					"filename_relative": "contracts/ProductsContract.sol",
-					"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\ProductsContract.sol",
-					"filename_short": "ProductsContract.sol",
-					"is_dependency": false,
-					"lines": [
-						2
-					],
-					"starting_column": 1,
-					"ending_column": 24,
-					"_ext_source_hash": "479cfacd31b8ec614713ae6f7c4e1fc1"
-				},
-				"type_specific_fields": {
-					"directive": [
-						"solidity",
-						"^",
-						"0.8",
-						".6"
-					]
-				}
-			}
-		],
-		"description": "Different versions of Solidity are used:\n\t- Version used: ['>=0.4.22<0.9.0', '^0.8.6']\n\t- >=0.4.22<0.9.0 (Migrations.sol#2)\n\t- ^0.8.6 (ProductsContract.sol#2)\n",
-		"markdown": "Different versions of Solidity are used:\n\t- Version used: ['>=0.4.22<0.9.0', '^0.8.6']\n\t- [>=0.4.22<0.9.0](contracts/Migrations.sol#L2)\n\t- [^0.8.6](contracts/ProductsContract.sol#L2)\n",
-		"first_markdown_element": "contracts/Migrations.sol#L2",
-		"id": "8e32f5717dcaf107ced5faef81d6e1ebab19abc6ce7f3567e20ceeaf122aafbd",
-		"check": "pragma",
-		"impact": "Informational",
-		"confidence": "High"
-	},
-	{
 		"elements": [],
 		"description": "solc-0.8.6 is not recommended for deployment\n",
 		"markdown": "solc-0.8.6 is not recommended for deployment\n",
@@ -115,124 +49,17 @@
 	{
 		"elements": [
 			{
-				"type": "pragma",
-				"name": ">=0.4.22<0.9.0",
-				"source_mapping": {
-					"start": 33,
-					"length": 32,
-					"filename_relative": "contracts/Migrations.sol",
-					"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\Migrations.sol",
-					"filename_short": "Migrations.sol",
-					"is_dependency": false,
-					"lines": [
-						2
-					],
-					"starting_column": 1,
-					"ending_column": 33,
-					"_ext_source_hash": "084e44bcf7ef8997e5108d40577e281e"
-				},
-				"type_specific_fields": {
-					"directive": [
-						"solidity",
-						">=",
-						"0.4",
-						".22",
-						"<",
-						"0.9",
-						".0"
-					]
-				}
-			}
-		],
-		"description": "Pragma version>=0.4.22<0.9.0 (Migrations.sol#2) is too complex\n",
-		"markdown": "Pragma version[>=0.4.22<0.9.0](contracts/Migrations.sol#L2) is too complex\n",
-		"first_markdown_element": "contracts/Migrations.sol#L2",
-		"id": "f2d9e60020e6c44eb990acb353a943a568e5bfb2d4cc59ba3887baa9aeaa9abf",
-		"check": "solc-version",
-		"impact": "Informational",
-		"confidence": "High"
-	},
-	{
-		"elements": [
-			{
-				"type": "variable",
-				"name": "last_completed_migration",
-				"source_mapping": {
-					"start": 136,
-					"length": 36,
-					"filename_relative": "contracts/Migrations.sol",
-					"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\Migrations.sol",
-					"filename_short": "Migrations.sol",
-					"is_dependency": false,
-					"lines": [
-						6
-					],
-					"starting_column": 5,
-					"ending_column": 41,
-					"_ext_source_hash": "0a9fa5cff94b034ec16de9331b94de7d"
-				},
-				"type_specific_fields": {
-					"parent": {
-						"type": "contract",
-						"name": "Migrations",
-						"source_mapping": {
-							"start": 69,
-							"length": 407,
-							"filename_relative": "contracts/Migrations.sol",
-							"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\Migrations.sol",
-							"filename_short": "Migrations.sol",
-							"is_dependency": false,
-							"lines": [
-								4,
-								5,
-								6,
-								7,
-								8,
-								9,
-								10,
-								11,
-								12,
-								13,
-								14,
-								15,
-								16,
-								17,
-								18,
-								19
-							],
-							"starting_column": 1,
-							"ending_column": 2
-						}
-					}
-				},
-				"additional_fields": {
-					"target": "variable",
-					"convention": "mixedCase"
-				}
-			}
-		],
-		"description": "Variable Migrations.last_completed_migration (Migrations.sol#6) is not in mixedCase\n",
-		"markdown": "Variable [Migrations.last_completed_migration](contracts/Migrations.sol#L6) is not in mixedCase\n",
-		"first_markdown_element": "contracts/Migrations.sol#L6",
-		"id": "1c519270c8b5a9bb371bf1748043cc37c217423cf64986d3d048bab9deef929e",
-		"check": "naming-convention",
-		"impact": "Informational",
-		"confidence": "High"
-	},
-	{
-		"elements": [
-			{
 				"type": "variable",
 				"name": "_description",
 				"source_mapping": {
-					"start": 820,
+					"start": 932,
 					"length": 26,
 					"filename_relative": "contracts/ProductsContract.sol",
 					"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\ProductsContract.sol",
 					"filename_short": "ProductsContract.sol",
 					"is_dependency": false,
 					"lines": [
-						33
+						28
 					],
 					"starting_column": 50,
 					"ending_column": 76,
@@ -243,19 +70,19 @@
 						"type": "function",
 						"name": "createProduct",
 						"source_mapping": {
-							"start": 775,
+							"start": 887,
 							"length": 328,
 							"filename_relative": "contracts/ProductsContract.sol",
 							"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\ProductsContract.sol",
 							"filename_short": "ProductsContract.sol",
 							"is_dependency": false,
 							"lines": [
-								33,
-								34,
-								35,
-								36,
-								37,
-								38
+								28,
+								29,
+								30,
+								31,
+								32,
+								33
 							],
 							"starting_column": 5,
 							"ending_column": 6
@@ -266,7 +93,7 @@
 								"name": "ProductsContract",
 								"source_mapping": {
 									"start": 60,
-									"length": 2514,
+									"length": 2390,
 									"filename_relative": "contracts/ProductsContract.sol",
 									"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\ProductsContract.sol",
 									"filename_short": "ProductsContract.sol",
@@ -340,18 +167,7 @@
 										69,
 										70,
 										71,
-										72,
-										73,
-										74,
-										75,
-										76,
-										77,
-										78,
-										79,
-										80,
-										81,
-										82,
-										83
+										72
 									],
 									"starting_column": 1,
 									"ending_column": 0
@@ -367,9 +183,9 @@
 				}
 			}
 		],
-		"description": "Parameter ProductsContract.createProduct(string,string)._description (ProductsContract.sol#33) is not in mixedCase\n",
-		"markdown": "Parameter [ProductsContract.createProduct(string,string)._description](contracts/ProductsContract.sol#L33) is not in mixedCase\n",
-		"first_markdown_element": "contracts/ProductsContract.sol#L33",
+		"description": "Parameter ProductsContract.createProduct(string,string)._description (ProductsContract.sol#28) is not in mixedCase\n",
+		"markdown": "Parameter [ProductsContract.createProduct(string,string)._description](contracts/ProductsContract.sol#L28) is not in mixedCase\n",
+		"first_markdown_element": "contracts/ProductsContract.sol#L28",
 		"id": "26dc45451c68c1c34934c6fb3e72012b050a13d927cbfdb3bf84aa9781134e05",
 		"check": "naming-convention",
 		"impact": "Informational",
@@ -381,39 +197,42 @@
 				"type": "variable",
 				"name": "_id",
 				"source_mapping": {
-					"start": 2154,
+					"start": 1630,
 					"length": 8,
 					"filename_relative": "contracts/ProductsContract.sol",
 					"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\ProductsContract.sol",
 					"filename_short": "ProductsContract.sol",
 					"is_dependency": false,
 					"lines": [
-						67
+						46
 					],
 					"starting_column": 28,
 					"ending_column": 36,
-					"_ext_source_hash": "9219bdf60755036d142bef93f18c8551"
+					"_ext_source_hash": "9d68f1db0a1271c1c35d7af3e5e46e97"
 				},
 				"type_specific_fields": {
 					"parent": {
 						"type": "function",
 						"name": "updateProduct",
 						"source_mapping": {
-							"start": 2131,
-							"length": 267,
+							"start": 1607,
+							"length": 408,
 							"filename_relative": "contracts/ProductsContract.sol",
 							"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\ProductsContract.sol",
 							"filename_short": "ProductsContract.sol",
 							"is_dependency": false,
 							"lines": [
-								67,
-								68,
-								69,
-								70,
-								71,
-								72,
-								73,
-								74
+								46,
+								47,
+								48,
+								49,
+								50,
+								51,
+								52,
+								53,
+								54,
+								55,
+								56
 							],
 							"starting_column": 5,
 							"ending_column": 6
@@ -424,7 +243,7 @@
 								"name": "ProductsContract",
 								"source_mapping": {
 									"start": 60,
-									"length": 2514,
+									"length": 2390,
 									"filename_relative": "contracts/ProductsContract.sol",
 									"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\ProductsContract.sol",
 									"filename_short": "ProductsContract.sol",
@@ -498,18 +317,7 @@
 										69,
 										70,
 										71,
-										72,
-										73,
-										74,
-										75,
-										76,
-										77,
-										78,
-										79,
-										80,
-										81,
-										82,
-										83
+										72
 									],
 									"starting_column": 1,
 									"ending_column": 0
@@ -525,164 +333,10 @@
 				}
 			}
 		],
-		"description": "Parameter ProductsContract.updateProduct(uint256,string,string)._id (ProductsContract.sol#67) is not in mixedCase\n",
-		"markdown": "Parameter [ProductsContract.updateProduct(uint256,string,string)._id](contracts/ProductsContract.sol#L67) is not in mixedCase\n",
-		"first_markdown_element": "contracts/ProductsContract.sol#L67",
+		"description": "Parameter ProductsContract.updateProduct(uint256,string,string)._id (ProductsContract.sol#46) is not in mixedCase\n",
+		"markdown": "Parameter [ProductsContract.updateProduct(uint256,string,string)._id](contracts/ProductsContract.sol#L46) is not in mixedCase\n",
+		"first_markdown_element": "contracts/ProductsContract.sol#L46",
 		"id": "337cf33c5023fc990bf2c614c432c321197ed71bd2885ff72dd6d1f10e395d73",
-		"check": "naming-convention",
-		"impact": "Informational",
-		"confidence": "High"
-	},
-	{
-		"elements": [
-			{
-				"type": "variable",
-				"name": "_id",
-				"source_mapping": {
-					"start": 1786,
-					"length": 8,
-					"filename_relative": "contracts/ProductsContract.sol",
-					"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\ProductsContract.sol",
-					"filename_short": "ProductsContract.sol",
-					"is_dependency": false,
-					"lines": [
-						61
-					],
-					"starting_column": 27,
-					"ending_column": 35,
-					"_ext_source_hash": "77a59b9617d18fbc709c5a0d9ced989b"
-				},
-				"type_specific_fields": {
-					"parent": {
-						"type": "function",
-						"name": "readProducts",
-						"source_mapping": {
-							"start": 1764,
-							"length": 303,
-							"filename_relative": "contracts/ProductsContract.sol",
-							"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\ProductsContract.sol",
-							"filename_short": "ProductsContract.sol",
-							"is_dependency": false,
-							"lines": [
-								61,
-								62,
-								63,
-								64
-							],
-							"starting_column": 5,
-							"ending_column": 6
-						},
-						"type_specific_fields": {
-							"parent": {
-								"type": "contract",
-								"name": "ProductsContract",
-								"source_mapping": {
-									"start": 60,
-									"length": 2514,
-									"filename_relative": "contracts/ProductsContract.sol",
-									"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\ProductsContract.sol",
-									"filename_short": "ProductsContract.sol",
-									"is_dependency": false,
-									"lines": [
-										4,
-										5,
-										6,
-										7,
-										8,
-										9,
-										10,
-										11,
-										12,
-										13,
-										14,
-										15,
-										16,
-										17,
-										18,
-										19,
-										20,
-										21,
-										22,
-										23,
-										24,
-										25,
-										26,
-										27,
-										28,
-										29,
-										30,
-										31,
-										32,
-										33,
-										34,
-										35,
-										36,
-										37,
-										38,
-										39,
-										40,
-										41,
-										42,
-										43,
-										44,
-										45,
-										46,
-										47,
-										48,
-										49,
-										50,
-										51,
-										52,
-										53,
-										54,
-										55,
-										56,
-										57,
-										58,
-										59,
-										60,
-										61,
-										62,
-										63,
-										64,
-										65,
-										66,
-										67,
-										68,
-										69,
-										70,
-										71,
-										72,
-										73,
-										74,
-										75,
-										76,
-										77,
-										78,
-										79,
-										80,
-										81,
-										82,
-										83
-									],
-									"starting_column": 1,
-									"ending_column": 0
-								}
-							},
-							"signature": "readProducts(uint256)"
-						}
-					}
-				},
-				"additional_fields": {
-					"target": "parameter",
-					"convention": "mixedCase"
-				}
-			}
-		],
-		"description": "Parameter ProductsContract.readProducts(uint256)._id (ProductsContract.sol#61) is not in mixedCase\n",
-		"markdown": "Parameter [ProductsContract.readProducts(uint256)._id](contracts/ProductsContract.sol#L61) is not in mixedCase\n",
-		"first_markdown_element": "contracts/ProductsContract.sol#L61",
-		"id": "3f009c821c22c7b9b2cc81b6d1280be0e07af77d42648b38d56988e1ee5f5d9c",
 		"check": "naming-convention",
 		"impact": "Informational",
 		"confidence": "High"
@@ -693,39 +347,42 @@
 				"type": "variable",
 				"name": "_title",
 				"source_mapping": {
-					"start": 2164,
+					"start": 1640,
 					"length": 20,
 					"filename_relative": "contracts/ProductsContract.sol",
 					"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\ProductsContract.sol",
 					"filename_short": "ProductsContract.sol",
 					"is_dependency": false,
 					"lines": [
-						67
+						46
 					],
 					"starting_column": 38,
 					"ending_column": 58,
-					"_ext_source_hash": "284e6283827c1ffe1015ea90a9bb1ef5"
+					"_ext_source_hash": "4a6d68b204205614e9d274d68492cbd4"
 				},
 				"type_specific_fields": {
 					"parent": {
 						"type": "function",
 						"name": "updateProduct",
 						"source_mapping": {
-							"start": 2131,
-							"length": 267,
+							"start": 1607,
+							"length": 408,
 							"filename_relative": "contracts/ProductsContract.sol",
 							"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\ProductsContract.sol",
 							"filename_short": "ProductsContract.sol",
 							"is_dependency": false,
 							"lines": [
-								67,
-								68,
-								69,
-								70,
-								71,
-								72,
-								73,
-								74
+								46,
+								47,
+								48,
+								49,
+								50,
+								51,
+								52,
+								53,
+								54,
+								55,
+								56
 							],
 							"starting_column": 5,
 							"ending_column": 6
@@ -736,7 +393,7 @@
 								"name": "ProductsContract",
 								"source_mapping": {
 									"start": 60,
-									"length": 2514,
+									"length": 2390,
 									"filename_relative": "contracts/ProductsContract.sol",
 									"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\ProductsContract.sol",
 									"filename_short": "ProductsContract.sol",
@@ -810,18 +467,7 @@
 										69,
 										70,
 										71,
-										72,
-										73,
-										74,
-										75,
-										76,
-										77,
-										78,
-										79,
-										80,
-										81,
-										82,
-										83
+										72
 									],
 									"starting_column": 1,
 									"ending_column": 0
@@ -837,9 +483,9 @@
 				}
 			}
 		],
-		"description": "Parameter ProductsContract.updateProduct(uint256,string,string)._title (ProductsContract.sol#67) is not in mixedCase\n",
-		"markdown": "Parameter [ProductsContract.updateProduct(uint256,string,string)._title](contracts/ProductsContract.sol#L67) is not in mixedCase\n",
-		"first_markdown_element": "contracts/ProductsContract.sol#L67",
+		"description": "Parameter ProductsContract.updateProduct(uint256,string,string)._title (ProductsContract.sol#46) is not in mixedCase\n",
+		"markdown": "Parameter [ProductsContract.updateProduct(uint256,string,string)._title](contracts/ProductsContract.sol#L46) is not in mixedCase\n",
+		"first_markdown_element": "contracts/ProductsContract.sol#L46",
 		"id": "71a6e10cd70dd0a9c84503e02d2059c96351cbd7293eedcef2113a80b7573503",
 		"check": "naming-convention",
 		"impact": "Informational",
@@ -851,39 +497,39 @@
 				"type": "variable",
 				"name": "_id",
 				"source_mapping": {
-					"start": 1195,
-					"length": 11,
+					"start": 1307,
+					"length": 8,
 					"filename_relative": "contracts/ProductsContract.sol",
 					"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\ProductsContract.sol",
 					"filename_short": "ProductsContract.sol",
 					"is_dependency": false,
 					"lines": [
-						41
+						36
 					],
 					"starting_column": 30,
-					"ending_column": 41,
-					"_ext_source_hash": "6cd191c15d2ba662b83a3684d27654bd"
+					"ending_column": 38,
+					"_ext_source_hash": "441c1b5ca17e9c11b0780f0734c12c71"
 				},
 				"type_specific_fields": {
 					"parent": {
 						"type": "function",
 						"name": "togglePublished",
 						"source_mapping": {
-							"start": 1170,
-							"length": 256,
+							"start": 1282,
+							"length": 261,
 							"filename_relative": "contracts/ProductsContract.sol",
 							"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\ProductsContract.sol",
 							"filename_short": "ProductsContract.sol",
 							"is_dependency": false,
 							"lines": [
+								36,
+								37,
+								38,
+								39,
+								40,
 								41,
 								42,
-								43,
-								44,
-								45,
-								46,
-								47,
-								48
+								43
 							],
 							"starting_column": 5,
 							"ending_column": 6
@@ -894,7 +540,7 @@
 								"name": "ProductsContract",
 								"source_mapping": {
 									"start": 60,
-									"length": 2514,
+									"length": 2390,
 									"filename_relative": "contracts/ProductsContract.sol",
 									"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\ProductsContract.sol",
 									"filename_short": "ProductsContract.sol",
@@ -968,18 +614,7 @@
 										69,
 										70,
 										71,
-										72,
-										73,
-										74,
-										75,
-										76,
-										77,
-										78,
-										79,
-										80,
-										81,
-										82,
-										83
+										72
 									],
 									"starting_column": 1,
 									"ending_column": 0
@@ -995,9 +630,9 @@
 				}
 			}
 		],
-		"description": "Parameter ProductsContract.togglePublished(uint256)._id (ProductsContract.sol#41) is not in mixedCase\n",
-		"markdown": "Parameter [ProductsContract.togglePublished(uint256)._id](contracts/ProductsContract.sol#L41) is not in mixedCase\n",
-		"first_markdown_element": "contracts/ProductsContract.sol#L41",
+		"description": "Parameter ProductsContract.togglePublished(uint256)._id (ProductsContract.sol#36) is not in mixedCase\n",
+		"markdown": "Parameter [ProductsContract.togglePublished(uint256)._id](contracts/ProductsContract.sol#L36) is not in mixedCase\n",
+		"first_markdown_element": "contracts/ProductsContract.sol#L36",
 		"id": "99209bb07e59fe242ab836c6b3531af81ac24a046e40ddf0107986100027be7f",
 		"check": "naming-convention",
 		"impact": "Informational",
@@ -1009,194 +644,43 @@
 				"type": "variable",
 				"name": "_id",
 				"source_mapping": {
-					"start": 1517,
+					"start": 2081,
 					"length": 8,
 					"filename_relative": "contracts/ProductsContract.sol",
 					"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\ProductsContract.sol",
 					"filename_short": "ProductsContract.sol",
 					"is_dependency": false,
 					"lines": [
-						52
-					],
-					"starting_column": 32,
-					"ending_column": 40,
-					"_ext_source_hash": "7b18b818f031e6fa787b3a2164455261"
-				},
-				"type_specific_fields": {
-					"parent": {
-						"type": "function",
-						"name": "findIndexProducts",
-						"source_mapping": {
-							"start": 1490,
-							"length": 266,
-							"filename_relative": "contracts/ProductsContract.sol",
-							"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\ProductsContract.sol",
-							"filename_short": "ProductsContract.sol",
-							"is_dependency": false,
-							"lines": [
-								52,
-								53,
-								54,
-								55,
-								56,
-								57,
-								58,
-								59
-							],
-							"starting_column": 5,
-							"ending_column": 6
-						},
-						"type_specific_fields": {
-							"parent": {
-								"type": "contract",
-								"name": "ProductsContract",
-								"source_mapping": {
-									"start": 60,
-									"length": 2514,
-									"filename_relative": "contracts/ProductsContract.sol",
-									"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\ProductsContract.sol",
-									"filename_short": "ProductsContract.sol",
-									"is_dependency": false,
-									"lines": [
-										4,
-										5,
-										6,
-										7,
-										8,
-										9,
-										10,
-										11,
-										12,
-										13,
-										14,
-										15,
-										16,
-										17,
-										18,
-										19,
-										20,
-										21,
-										22,
-										23,
-										24,
-										25,
-										26,
-										27,
-										28,
-										29,
-										30,
-										31,
-										32,
-										33,
-										34,
-										35,
-										36,
-										37,
-										38,
-										39,
-										40,
-										41,
-										42,
-										43,
-										44,
-										45,
-										46,
-										47,
-										48,
-										49,
-										50,
-										51,
-										52,
-										53,
-										54,
-										55,
-										56,
-										57,
-										58,
-										59,
-										60,
-										61,
-										62,
-										63,
-										64,
-										65,
-										66,
-										67,
-										68,
-										69,
-										70,
-										71,
-										72,
-										73,
-										74,
-										75,
-										76,
-										77,
-										78,
-										79,
-										80,
-										81,
-										82,
-										83
-									],
-									"starting_column": 1,
-									"ending_column": 0
-								}
-							},
-							"signature": "findIndexProducts(uint256)"
-						}
-					}
-				},
-				"additional_fields": {
-					"target": "parameter",
-					"convention": "mixedCase"
-				}
-			}
-		],
-		"description": "Parameter ProductsContract.findIndexProducts(uint256)._id (ProductsContract.sol#52) is not in mixedCase\n",
-		"markdown": "Parameter [ProductsContract.findIndexProducts(uint256)._id](contracts/ProductsContract.sol#L52) is not in mixedCase\n",
-		"first_markdown_element": "contracts/ProductsContract.sol#L52",
-		"id": "9e46b8a9d0f08019ac731010da8563e5fc423dc2d7849537a56d445631464523",
-		"check": "naming-convention",
-		"impact": "Informational",
-		"confidence": "High"
-	},
-	{
-		"elements": [
-			{
-				"type": "variable",
-				"name": "_id",
-				"source_mapping": {
-					"start": 2464,
-					"length": 8,
-					"filename_relative": "contracts/ProductsContract.sol",
-					"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\ProductsContract.sol",
-					"filename_short": "ProductsContract.sol",
-					"is_dependency": false,
-					"lines": [
-						77
+						59
 					],
 					"starting_column": 28,
 					"ending_column": 36,
-					"_ext_source_hash": "027b6a27f846d978c857bd8f263fc53a"
+					"_ext_source_hash": "4cfaffa9a3c7bf96326bfda18034b9e0"
 				},
 				"type_specific_fields": {
 					"parent": {
 						"type": "function",
 						"name": "deleteProduct",
 						"source_mapping": {
-							"start": 2441,
-							"length": 130,
+							"start": 2058,
+							"length": 389,
 							"filename_relative": "contracts/ProductsContract.sol",
 							"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\ProductsContract.sol",
 							"filename_short": "ProductsContract.sol",
 							"is_dependency": false,
 							"lines": [
-								77,
-								78,
-								79,
-								80,
-								81
+								59,
+								60,
+								61,
+								62,
+								63,
+								64,
+								65,
+								66,
+								67,
+								68,
+								69,
+								70
 							],
 							"starting_column": 5,
 							"ending_column": 6
@@ -1207,7 +691,7 @@
 								"name": "ProductsContract",
 								"source_mapping": {
 									"start": 60,
-									"length": 2514,
+									"length": 2390,
 									"filename_relative": "contracts/ProductsContract.sol",
 									"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\ProductsContract.sol",
 									"filename_short": "ProductsContract.sol",
@@ -1281,18 +765,7 @@
 										69,
 										70,
 										71,
-										72,
-										73,
-										74,
-										75,
-										76,
-										77,
-										78,
-										79,
-										80,
-										81,
-										82,
-										83
+										72
 									],
 									"starting_column": 1,
 									"ending_column": 0
@@ -1308,9 +781,9 @@
 				}
 			}
 		],
-		"description": "Parameter ProductsContract.deleteProduct(uint256)._id (ProductsContract.sol#77) is not in mixedCase\n",
-		"markdown": "Parameter [ProductsContract.deleteProduct(uint256)._id](contracts/ProductsContract.sol#L77) is not in mixedCase\n",
-		"first_markdown_element": "contracts/ProductsContract.sol#L77",
+		"description": "Parameter ProductsContract.deleteProduct(uint256)._id (ProductsContract.sol#59) is not in mixedCase\n",
+		"markdown": "Parameter [ProductsContract.deleteProduct(uint256)._id](contracts/ProductsContract.sol#L59) is not in mixedCase\n",
+		"first_markdown_element": "contracts/ProductsContract.sol#L59",
 		"id": "bb75df99acdf840039d781b32865147abd8aee9e9a9307828b94ebb6b896b9c1",
 		"check": "naming-convention",
 		"impact": "Informational",
@@ -1322,39 +795,42 @@
 				"type": "variable",
 				"name": "_description",
 				"source_mapping": {
-					"start": 2186,
+					"start": 1662,
 					"length": 26,
 					"filename_relative": "contracts/ProductsContract.sol",
 					"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\ProductsContract.sol",
 					"filename_short": "ProductsContract.sol",
 					"is_dependency": false,
 					"lines": [
-						67
+						46
 					],
 					"starting_column": 60,
 					"ending_column": 86,
-					"_ext_source_hash": "628ab735bae5720f88135662494e9a54"
+					"_ext_source_hash": "a39b23fb314295956fe58f46cf86faf2"
 				},
 				"type_specific_fields": {
 					"parent": {
 						"type": "function",
 						"name": "updateProduct",
 						"source_mapping": {
-							"start": 2131,
-							"length": 267,
+							"start": 1607,
+							"length": 408,
 							"filename_relative": "contracts/ProductsContract.sol",
 							"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\ProductsContract.sol",
 							"filename_short": "ProductsContract.sol",
 							"is_dependency": false,
 							"lines": [
-								67,
-								68,
-								69,
-								70,
-								71,
-								72,
-								73,
-								74
+								46,
+								47,
+								48,
+								49,
+								50,
+								51,
+								52,
+								53,
+								54,
+								55,
+								56
 							],
 							"starting_column": 5,
 							"ending_column": 6
@@ -1365,7 +841,7 @@
 								"name": "ProductsContract",
 								"source_mapping": {
 									"start": 60,
-									"length": 2514,
+									"length": 2390,
 									"filename_relative": "contracts/ProductsContract.sol",
 									"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\ProductsContract.sol",
 									"filename_short": "ProductsContract.sol",
@@ -1439,18 +915,7 @@
 										69,
 										70,
 										71,
-										72,
-										73,
-										74,
-										75,
-										76,
-										77,
-										78,
-										79,
-										80,
-										81,
-										82,
-										83
+										72
 									],
 									"starting_column": 1,
 									"ending_column": 0
@@ -1466,9 +931,9 @@
 				}
 			}
 		],
-		"description": "Parameter ProductsContract.updateProduct(uint256,string,string)._description (ProductsContract.sol#67) is not in mixedCase\n",
-		"markdown": "Parameter [ProductsContract.updateProduct(uint256,string,string)._description](contracts/ProductsContract.sol#L67) is not in mixedCase\n",
-		"first_markdown_element": "contracts/ProductsContract.sol#L67",
+		"description": "Parameter ProductsContract.updateProduct(uint256,string,string)._description (ProductsContract.sol#46) is not in mixedCase\n",
+		"markdown": "Parameter [ProductsContract.updateProduct(uint256,string,string)._description](contracts/ProductsContract.sol#L46) is not in mixedCase\n",
+		"first_markdown_element": "contracts/ProductsContract.sol#L46",
 		"id": "f21d28527d0ece319f5a9364a49db8c52b902e68b1b390f6dfa57b1af06490ce",
 		"check": "naming-convention",
 		"impact": "Informational",
@@ -1480,14 +945,14 @@
 				"type": "variable",
 				"name": "_title",
 				"source_mapping": {
-					"start": 798,
+					"start": 910,
 					"length": 20,
 					"filename_relative": "contracts/ProductsContract.sol",
 					"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\ProductsContract.sol",
 					"filename_short": "ProductsContract.sol",
 					"is_dependency": false,
 					"lines": [
-						33
+						28
 					],
 					"starting_column": 28,
 					"ending_column": 48,
@@ -1498,19 +963,19 @@
 						"type": "function",
 						"name": "createProduct",
 						"source_mapping": {
-							"start": 775,
+							"start": 887,
 							"length": 328,
 							"filename_relative": "contracts/ProductsContract.sol",
 							"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\ProductsContract.sol",
 							"filename_short": "ProductsContract.sol",
 							"is_dependency": false,
 							"lines": [
-								33,
-								34,
-								35,
-								36,
-								37,
-								38
+								28,
+								29,
+								30,
+								31,
+								32,
+								33
 							],
 							"starting_column": 5,
 							"ending_column": 6
@@ -1521,7 +986,7 @@
 								"name": "ProductsContract",
 								"source_mapping": {
 									"start": 60,
-									"length": 2514,
+									"length": 2390,
 									"filename_relative": "contracts/ProductsContract.sol",
 									"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\ProductsContract.sol",
 									"filename_short": "ProductsContract.sol",
@@ -1595,18 +1060,7 @@
 										69,
 										70,
 										71,
-										72,
-										73,
-										74,
-										75,
-										76,
-										77,
-										78,
-										79,
-										80,
-										81,
-										82,
-										83
+										72
 									],
 									"starting_column": 1,
 									"ending_column": 0
@@ -1622,229 +1076,12 @@
 				}
 			}
 		],
-		"description": "Parameter ProductsContract.createProduct(string,string)._title (ProductsContract.sol#33) is not in mixedCase\n",
-		"markdown": "Parameter [ProductsContract.createProduct(string,string)._title](contracts/ProductsContract.sol#L33) is not in mixedCase\n",
-		"first_markdown_element": "contracts/ProductsContract.sol#L33",
+		"description": "Parameter ProductsContract.createProduct(string,string)._title (ProductsContract.sol#28) is not in mixedCase\n",
+		"markdown": "Parameter [ProductsContract.createProduct(string,string)._title](contracts/ProductsContract.sol#L28) is not in mixedCase\n",
+		"first_markdown_element": "contracts/ProductsContract.sol#L28",
 		"id": "fe607f3021fc8d900d17a01a2a20c66b7890f1fed6927d6c95fe592bbc9c4f0a",
 		"check": "naming-convention",
 		"impact": "Informational",
-		"confidence": "High"
-	},
-	{
-		"elements": [
-			{
-				"type": "node",
-				"name": "i < products2.length",
-				"source_mapping": {
-					"start": 1582,
-					"length": 18,
-					"filename_relative": "contracts/ProductsContract.sol",
-					"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\ProductsContract.sol",
-					"filename_short": "ProductsContract.sol",
-					"is_dependency": false,
-					"lines": [
-						53
-					],
-					"starting_column": 24,
-					"ending_column": 42,
-					"_ext_source_hash": "f4ae52bf76fb9ceaa107190fc90eeded"
-				},
-				"type_specific_fields": {
-					"parent": {
-						"type": "function",
-						"name": "findIndexProducts",
-						"source_mapping": {
-							"start": 1490,
-							"length": 266,
-							"filename_relative": "contracts/ProductsContract.sol",
-							"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\ProductsContract.sol",
-							"filename_short": "ProductsContract.sol",
-							"is_dependency": false,
-							"lines": [
-								52,
-								53,
-								54,
-								55,
-								56,
-								57,
-								58,
-								59
-							],
-							"starting_column": 5,
-							"ending_column": 6
-						},
-						"type_specific_fields": {
-							"parent": {
-								"type": "contract",
-								"name": "ProductsContract",
-								"source_mapping": {
-									"start": 60,
-									"length": 2514,
-									"filename_relative": "contracts/ProductsContract.sol",
-									"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\ProductsContract.sol",
-									"filename_short": "ProductsContract.sol",
-									"is_dependency": false,
-									"lines": [
-										4,
-										5,
-										6,
-										7,
-										8,
-										9,
-										10,
-										11,
-										12,
-										13,
-										14,
-										15,
-										16,
-										17,
-										18,
-										19,
-										20,
-										21,
-										22,
-										23,
-										24,
-										25,
-										26,
-										27,
-										28,
-										29,
-										30,
-										31,
-										32,
-										33,
-										34,
-										35,
-										36,
-										37,
-										38,
-										39,
-										40,
-										41,
-										42,
-										43,
-										44,
-										45,
-										46,
-										47,
-										48,
-										49,
-										50,
-										51,
-										52,
-										53,
-										54,
-										55,
-										56,
-										57,
-										58,
-										59,
-										60,
-										61,
-										62,
-										63,
-										64,
-										65,
-										66,
-										67,
-										68,
-										69,
-										70,
-										71,
-										72,
-										73,
-										74,
-										75,
-										76,
-										77,
-										78,
-										79,
-										80,
-										81,
-										82,
-										83
-									],
-									"starting_column": 1,
-									"ending_column": 0
-								}
-							},
-							"signature": "findIndexProducts(uint256)"
-						}
-					}
-				}
-			}
-		],
-		"description": "Loop condition i < products2.length (ProductsContract.sol#53) should use cached array length instead of referencing `length` member of the storage array.\n ",
-		"markdown": "Loop condition [i < products2.length](contracts/ProductsContract.sol#L53) should use cached array length instead of referencing `length` member of the storage array.\n ",
-		"first_markdown_element": "contracts/ProductsContract.sol#L53",
-		"id": "c3d65e58cc28201bf346bba8047e587a8751a731554ec99cc9ba2e66bd6b0af1",
-		"check": "cache-array-length",
-		"impact": "Optimization",
-		"confidence": "High"
-	},
-	{
-		"elements": [
-			{
-				"type": "variable",
-				"name": "owner",
-				"source_mapping": {
-					"start": 96,
-					"length": 33,
-					"filename_relative": "contracts/Migrations.sol",
-					"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\Migrations.sol",
-					"filename_short": "Migrations.sol",
-					"is_dependency": false,
-					"lines": [
-						5
-					],
-					"starting_column": 5,
-					"ending_column": 38,
-					"_ext_source_hash": "ffbd5347ec68e8ca4119fb7f1ef33eb7"
-				},
-				"type_specific_fields": {
-					"parent": {
-						"type": "contract",
-						"name": "Migrations",
-						"source_mapping": {
-							"start": 69,
-							"length": 407,
-							"filename_relative": "contracts/Migrations.sol",
-							"filename_absolute": "c:\\Users\\sihue\\Documents\\Programacion\\Visual-Studio-Code\\Blockchain\\project_smart_contracts\\contracts\\Migrations.sol",
-							"filename_short": "Migrations.sol",
-							"is_dependency": false,
-							"lines": [
-								4,
-								5,
-								6,
-								7,
-								8,
-								9,
-								10,
-								11,
-								12,
-								13,
-								14,
-								15,
-								16,
-								17,
-								18,
-								19
-							],
-							"starting_column": 1,
-							"ending_column": 2
-						}
-					}
-				}
-			}
-		],
-		"description": "Migrations.owner (Migrations.sol#5) should be immutable \n",
-		"markdown": "[Migrations.owner](contracts/Migrations.sol#L5) should be immutable \n",
-		"first_markdown_element": "contracts/Migrations.sol#L5",
-		"id": "39a2c78a5e5032e587a3e47cc0a2ecfffe650b3f00ce5e9d5cb59fa01ee7ce63",
-		"check": "immutable-states",
-		"impact": "Optimization",
 		"confidence": "High"
 	}
 ]

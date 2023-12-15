@@ -17,14 +17,7 @@ contract ProductsContract {
         uint createdAT;
     }
 
-    event ProductCreated(
-        uint id,
-        string title,
-        string description,
-        bool published,
-        uint createdAT
-    ); 
-
+    event ProductCreated(uint id, string title, string description, bool published, uint createdAT);
     event ProductTogglePublished(uint id, bool published);
     event ProductUpdate(uint id, string title, string description, uint createdAT);
     event ProductDelete(uint id, string title, string description, uint createdAT);
@@ -40,7 +33,7 @@ contract ProductsContract {
     }
 
     // Función para actualizar el estado de un producto 
-    function togglePublished(uint256 _id) public {
+    function togglePublished(uint _id) public {
         Product memory _product = products[_id];
         _product.published = !_product.published;
         
@@ -68,6 +61,8 @@ contract ProductsContract {
 
         _product.title = "";
         _product.description = "";
+        _product.published = false;
+        _product.createdAT = block.timestamp;
         
         products[_id] = _product;
 
